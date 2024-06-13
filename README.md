@@ -45,9 +45,9 @@ Em seguida, foi necessário pegar as credenciais da AWS clicando no botão `AWS 
 
 ## Inicialização do diretório
 Aqui o comando `terraform init` foi executado, que é responsável por:
-1. Baixar Plugins: O Terraform baixa os plugins do provedor AWS que são necessários para interagir com a API da AWS.
-2. Configurar Backend: Se configurado, o Terraform inicializa o backend, onde o estado da infraestrutura será armazenado.
-3. Verificar Configurações: O Terraform verifica as versões dos provedores e do próprio Terraform para garantir compatibilidade.
+1. **Baixar Plugins:** O Terraform baixa os plugins do provedor AWS que são necessários para interagir com a API da AWS.
+2. **Configurar Backend:** Se configurado, o Terraform inicializa o backend, onde o estado da infraestrutura será armazenado.
+3. **Verificar Configurações:** O Terraform verifica as versões dos provedores e do próprio Terraform para garantir compatibilidade.
 
 <p align="center">
 <img src="/assets/3.png" width="80%">
@@ -62,18 +62,20 @@ Aqui os comandos `terraform fmt` e `terraform validate` foram executados. O prim
 
 ## Criação da infraestrutura
 Aqui o comando `terraform apply` foi executado, que consiste em três etapas:
-1. Plano de Execução: O Terraform cria um plano de execução, detalhando as ações que serão tomadas para alcançar o estado desejado, o plano é exibido na tela, mostrando os recursos que serão criados, modificados ou destruídos.
+
+1. **Plano de Execução:** O Terraform cria um plano de execução, detalhando as ações que serão tomadas para alcançar o estado desejado, o plano é exibido na tela, mostrando os recursos que serão criados, modificados ou destruídos.
+
 <p align="center">
 <img src="/assets/5.png" width="80%">
 </p>
 
-2. Confirmação: O usuário é solicitado a confirmar a execução do plano digitando yes. Isso é uma medida de segurança para evitar mudanças não intencionais.
+2. **Confirmação:** O usuário é solicitado a confirmar a execução do plano digitando yes. Isso é uma medida de segurança para evitar mudanças não intencionais.
 
 <p align="center">
 <img src="/assets/6.png" width="60%">
 </p>
 
-3. Aplicação: Após a confirmação, o Terraform executa o plano, interagindo com a API da AWS para criar os recursos especificados.
+3. **Aplicação:** Após a confirmação, o Terraform executa o plano, interagindo com a API da AWS para criar os recursos especificados.
 
 <p align="center">
 <img src="/assets/7.png" width="60%">
